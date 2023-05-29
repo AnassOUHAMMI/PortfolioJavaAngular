@@ -21,6 +21,7 @@ public class Etudiant {
 	private Long Id;
 	private String nom;
 	private String Prenom;
+	private String statut;
 	private File photo_identite;
 	private File cv;
 	private Date dateNaissance;
