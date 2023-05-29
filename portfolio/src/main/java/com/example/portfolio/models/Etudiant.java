@@ -2,7 +2,10 @@ package com.example.portfolio.models;
 
 import java.io.File;
 import java.util.Date;
+import java.util.List;
+
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,6 +29,11 @@ public class Etudiant {
 	private File cv;
 	private Date dateNaissance;
 	private String description;
+	
+	@OneToMany
+	List<Formation> formations;
+	@OneToMany
+	List<Stage> stages;
 	
 	
 	
